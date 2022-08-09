@@ -35,7 +35,7 @@ jobs:
           && chromedriver --version
     - name: Start clock
       env:
-        ID: ${{ secrets.ID }}
+        ID: ${{ secrets.ID }} 
         PASSWORD: ${{ secrets.PASSWORD }}
         LOCATION: ${{ secrets.LOCATION }}
       run: python 每日上报.py
